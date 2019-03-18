@@ -11,7 +11,7 @@ song_df = pandas.read_csv(base_dir + 'song_df.csv')
 users = song_df['user_id'].unique()
 songs = song_df['song'].unique()
 
-print("Heloo Function")
+print("Hello Function")
 
 def load_data():
     global base_dir
@@ -22,3 +22,11 @@ def init_recommender(df):
     pm = Recommenders.popularity_recommender_py()
     pm.create(df, 'user_id', 'song')
     return pm
+
+def popularity_based(user_id):
+    global song_df
+    global users
+    global songs
+    train_data, test_data = train_test_split(song_df, test_size=0.20, random_state=0)
+    pm=init_recommender(train_data)
+    return pm.recommend(user_id)
