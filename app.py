@@ -16,7 +16,7 @@ def index():
 @app.route('/pop_rec/<user_id>')
 def pop_rmd(user_id):
     x=functions.popularity_based()
-    return render_template('pop_rmd.html',  tables=x,show_table=1)
+    return render_template('pop_rmd.html',  tables=x,show_table=1,user_id=user_id)
 
 @app.route('/user_rec_ip',methods=['GET','POST'])
 def user_rec_ip():
@@ -28,7 +28,7 @@ def user_rec_ip():
 @app.route('/user_rec/<user_id>')
 def user_rec(user_id):
     x=functions.item_similarity(user_id)
-    return render_template('user_rec.html', tables=x, show_table=1)
+    return render_template('user_rec.html', tables=x, show_table=1,user_id=user_id)
 
 @app.route('/song_rec_ip',methods=['GET','POST'])
 def song_rec_ip():
@@ -42,7 +42,7 @@ def song_rec(song):
     print(song)
     print(type(song))
     x=functions.similar_songs(song)
-    return render_template('song_rec.html', tables=x, show_table=1)
+    return render_template('song_rec.html', tables=x, show_table=1,song=song)
 
 if __name__ == '__main__':
     app.run(debug=False)
