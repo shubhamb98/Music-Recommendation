@@ -42,7 +42,7 @@
 		    </div><!-- /.navbar-collapse -->
   		</div><!-- /.container-fluid -->
 	</nav>
-	
+
 	<div class="container">
 		<form method="post" action="">
 			<div class="form-group">
@@ -59,37 +59,31 @@
 			</div>
 		</form>
 	</div>
-	
+
 	{% if show_table %}
 		<div class="container">
 			<table class="table table-hover">
 			    <thead>
 			      <tr>
-			        <th>Firstname</th>
-			        <th>Lastname</th>
-			        <th>Email</th>
+			        <th>Song</th>
+			        <th>Score</th>
+			        <th>Rank</th>
 			      </tr>
 			    </thead>
 			    <tbody>
+                {% for index, row in tables.iterrows() %}
 			      <tr>
-			        <td>John</td>
-			        <td>Doe</td>
-			        <td>john@example.com</td>
+
+			        <td>{{ row['song'] }}</td>
+			        <td>{{ row['score'] }}</td>
+			        <td>{{ row['rank'] }}</td>
 			      </tr>
-			      <tr>
-			        <td>Mary</td>
-			        <td>Moe</td>
-			        <td>mary@example.com</td>
-			      </tr>
-			      <tr>
-			        <td>July</td>
-			        <td>Dooley</td>
-			        <td>july@example.com</td>
-			      </tr>
+                {% endfor %}
+
 			    </tbody>
 		  	</table>
 		</div>
-	{% endif %}	
+	{% endif %}
 
 
 <!--===============================================================================================-->

@@ -97,8 +97,9 @@ print("----------------------------------------------------------------------")
 is_model.recommend(user_id)
 
 
-#recommend based on item
-#def similar_songs(song)
-is_model = Recommenders.item_similarity_recommender_py()
-is_model.create(train_data, 'user_id', 'song')
-is_model.get_similar_items(['U Smile - Justin Bieber'])
+def similar_songs(song):
+    is_model = Recommenders.item_similarity_recommender_py()
+    is_model.create(train_data, 'user_id', 'song')
+    x=is_model.get_similar_items(['U Smile - Justin Bieber'])
+    return x
+

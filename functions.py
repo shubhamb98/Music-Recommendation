@@ -23,10 +23,31 @@ def init_recommender(df):
     pm.create(df, 'user_id', 'song')
     return pm
 
-def popularity_based(user_id):
+def popularity_based(user_id=users[1]):
     global song_df
     global users
     global songs
-    train_data, test_data = train_test_split(song_df, test_size=0.20, random_state=0)
-    pm=init_recommender(train_data)
+    pm=init_recommender(song_df)
     return pm.recommend(user_id)
+
+def item_similarity(user_id):
+    global song_df
+    global users
+    global songs
+    is_model = Recommenders.item_similarity_recommender_py()
+    is_model.create(song_df, 'user_id', 'song')
+    x=is_model.recommend(user_id)
+    return x
+
+def similar_songs(song):
+    global song_df
+    global users
+    global songs
+    is_model = Recommenders.item_similarity_recommender_py()
+    is_model.create(song_df, 'user_id', 'song')
+    x=is_model.get_similar_items([song])
+    return x
+
+
+#for i in tt['song']:
+  #  print (i)

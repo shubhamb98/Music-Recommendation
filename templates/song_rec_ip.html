@@ -46,10 +46,10 @@
 	<div class="container">
 		<form method="post" action="">
 			<div class="form-group">
-			  	<label for="sel1">Select User:</label>
-				<select class="form-control" id="user_id" name="user_id">
+			  	<label for="sel1">Select Song:</label>
+				<select class="form-control" id="song" name="song">
 					{% for i in result %}
-                <option value={{ i }}>{{ i }}</option>
+                <option value="{{ i }}">{{ i }}</option>
                 {% endfor %}
 
 				</select>
