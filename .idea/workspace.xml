@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f382e6bb-cf77-44b4-9819-45684d3d7176" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extract_and_store_spectrograms.py" beforeDir="false" afterPath="$PROJECT_DIR$/extract_and_store_spectrograms.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +16,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/untitled$recommend.coverage" NAME="recommend Coverage Results" MODIFIED="1551714184475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Music_Recommendation$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1553450022487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Music_Recommendation$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1553450906768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Music_Recommendation$untitled.coverage" NAME="untitled Coverage Results" MODIFIED="1553004263580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/untitled$temp.coverage" NAME="temp Coverage Results" MODIFIED="1551702562328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled$untitled.coverage" NAME="untitled Coverage Results" MODIFIED="1552900372011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -99,25 +98,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="568" />
-          <entry key="html" value="639" />
-          <entry key="py" value="2463" />
-          <entry key="txt" value="133" />
+          <entry key="Python Console" value="575" />
+          <entry key="html" value="677" />
+          <entry key="py" value="2515" />
+          <entry key="txt" value="143" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="639" />
-          <entry key="PLAIN_TEXT" value="133" />
-          <entry key="Python" value="2841" />
+          <entry key="HTML" value="677" />
+          <entry key="PLAIN_TEXT" value="143" />
+          <entry key="Python" value="2900" />
           <entry key="Scratch" value="190" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="34" />
+          <entry key="html" value="40" />
           <entry key="js" value="1" />
-          <entry key="py" value="14" />
+          <entry key="py" value="16" />
           <entry key="rnc" value="1" />
           <entry key="sh" value="3" />
           <entry key="txt" value="2" />
@@ -126,10 +125,10 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Bash" value="3" />
-          <entry key="HTML" value="34" />
+          <entry key="HTML" value="40" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="13" />
+          <entry key="Python" value="15" />
           <entry key="RNG Compact" value="1" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -145,7 +144,7 @@
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-629">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="15" />
+              <caret line="14" selection-start-line="14" selection-end-line="15" />
               <folding>
                 <element signature="e#0#92#0" expanded="true" />
                 <marker date="1553449642143" expanded="true" signature="534:536" ph="..." />
@@ -155,29 +154,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/upload.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="40" column="63" lean-forward="true" selection-start-line="40" selection-start-column="63" selection-end-line="40" selection-end-column="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/extract_and_store_spectrograms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="35" column="56" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="56" />
+            <state relative-caret-position="172">
+              <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
               <folding>
                 <element signature="e#2#16#0" expanded="true" />
               </folding>
@@ -186,10 +167,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/song_labels.html">
+        <entry file="file://$PROJECT_DIR$/templates/upload.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+            <state relative-caret-position="272">
+              <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/song_rec.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/functions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="67" selection-start-line="67" selection-end-line="67" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -223,21 +225,21 @@
         <option value="$PROJECT_DIR$/temp.py" />
         <option value="$PROJECT_DIR$/templates/popularity.html" />
         <option value="$PROJECT_DIR$/pre_process_1.py" />
-        <option value="$PROJECT_DIR$/templates/user_rec.html" />
-        <option value="$PROJECT_DIR$/templates/user_rec_ip.html" />
-        <option value="$PROJECT_DIR$/templates/pop_rmd.html" />
-        <option value="$PROJECT_DIR$/templates/song_rec.html" />
-        <option value="$PROJECT_DIR$/templates/song_rec_ip.html" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/all_Data.py" />
-        <option value="$PROJECT_DIR$/templates/upload.html" />
         <option value="$PROJECT_DIR$/3_extract_and_store_spectrograms.py" />
-        <option value="$PROJECT_DIR$/extract_and_store_spectrograms.py" />
         <option value="$PROJECT_DIR$/label_image.py" />
-        <option value="$PROJECT_DIR$/templates/song_labels.html" />
         <option value="$PROJECT_DIR$/functions.py" />
         <option value="$PROJECT_DIR$/templates/upload1.html" />
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/pop_rmd.html" />
+        <option value="$PROJECT_DIR$/templates/song_rec.html" />
+        <option value="$PROJECT_DIR$/templates/song_rec_ip.html" />
+        <option value="$PROJECT_DIR$/templates/upload.html" />
+        <option value="$PROJECT_DIR$/templates/song_labels.html" />
+        <option value="$PROJECT_DIR$/templates/user_rec.html" />
+        <option value="$PROJECT_DIR$/templates/user_rec_ip.html" />
+        <option value="$PROJECT_DIR$/extract_and_store_spectrograms.py" />
       </list>
     </option>
   </component>
@@ -485,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553422172812</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="UI done .">
+      <created>1553450078824</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1553450078824</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -499,7 +508,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49512196" visible="true" weight="0.31694403" />
       <window_info id="Structure" order="1" sideWeight="0.50487804" side_tool="true" weight="0.2647504" />
@@ -562,7 +570,8 @@
     <MESSAGE value="navigation updated" />
     <MESSAGE value="cnn_model" />
     <MESSAGE value="cnn_model working.UI not done yet" />
-    <option name="LAST_COMMIT_MESSAGE" value="cnn_model working.UI not done yet" />
+    <MESSAGE value="UI done ." />
+    <option name="LAST_COMMIT_MESSAGE" value="UI done ." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/spark.py">
@@ -650,34 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user_rec.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="39" column="71" selection-start-line="39" selection-start-column="71" selection-end-line="39" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/popularity.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user_rec_ip.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/song_rec_ip.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/all_Data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -694,13 +675,6 @@
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/pop_rmd.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -721,13 +695,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/3_extract_and_store_spectrograms.py" />
-    <entry file="file://$PROJECT_DIR$/templates/song_rec.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="56" column="27" lean-forward="true" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/label_image.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-153">
@@ -735,33 +702,6 @@
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extract_and_store_spectrograms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="35" column="56" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="56" />
-          <folding>
-            <element signature="e#2#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/song_labels.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -775,7 +715,7 @@
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-629">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="15" />
+          <caret line="14" selection-start-line="14" selection-end-line="15" />
           <folding>
             <element signature="e#0#92#0" expanded="true" />
             <marker date="1553449642143" expanded="true" signature="534:536" ph="..." />
@@ -786,15 +726,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/upload.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="272">
+          <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user_rec_ip.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user_rec.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/song_labels.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/popularity.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pop_rmd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="40" column="63" lean-forward="true" selection-start-line="40" selection-start-column="63" selection-end-line="40" selection-end-column="63" />
+          <caret line="40" column="35" selection-start-line="40" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/song_rec_ip.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="40" column="52" selection-start-line="40" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/song_rec.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extract_and_store_spectrograms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <folding>
+            <element signature="e#2#16#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

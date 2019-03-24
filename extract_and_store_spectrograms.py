@@ -23,7 +23,7 @@ def extract_feature(file_name):
 # Define directory where sound files are stored within '/wav_files_TOTAL/' folder
 root = "C:/Users/HP/Desktop/Music-Recommendation/uploads/"
 def wav_to_image():
-#os.chdir(root + '/wav_files/')
+    os.chdir(root)
     filenames=[]
     for file in os.listdir('.'):
         if file.endswith(".wav"):
@@ -31,10 +31,13 @@ def wav_to_image():
     print(len(filenames))
 
     for wav_file in filenames:
-        print(wav_file)
-        npy = extract_feature(os.path.abspath(wav_file))
-        dest = root  + str(os.path.splitext(wav_file)[0])
-        scipy.misc.imsave(dest+'.jpeg', npy)
-        print(dest)
+        name=str(os.path.splitext(wav_file)[0])
+        exists = os.path.isfile(root +name+'.jpeg')
+        if not exists:
+            print(wav_file)
+            npy = extract_feature(os.path.abspath(wav_file))
+            dest = root  + name
+            scipy.misc.imsave(dest+'.jpeg', npy)
+            print(dest)
 
 
