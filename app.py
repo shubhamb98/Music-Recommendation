@@ -1,9 +1,18 @@
-from flask import Flask,redirect, url_for, request,render_template
+from flask import Flask,redirect, url_for, request,render_template,flash,send_from_directory
 import pandas as pd
+from werkzeug.utils import secure_filename
+import functions,os
+current_path=os.getcwd()
+UPLOAD_FOLDER = current_path+'/uploads'
 app = Flask(__name__)
-import functions
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
+ALLOWED_EXTENSIONS = set(['mp3', 'wav', 'png', 'jpg', 'jpeg', 'gif'])
 
-app = Flask(__name__)
+def allowed_file(filename):
+	return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+
 
 
 @app.route('/',methods=['GET','POST'])
@@ -44,5 +53,36 @@ def song_rec(song):
     x=functions.similar_songs(song)
     return render_template('song_rec.html', tables=x, show_table=1,song=song)
 
+@app.route('/upload', methods=['GET', 'POST'])
+def upload_file():
+    message=None
+    if request.method == 'POST':
+        # check if the post request has the file part
+        if 'file' not in request.files:
+            message='No file part'
+            return redirect(request.url)
+        file = request.files['file']
+        # if user does not select file, browser also
+        # submit an empty part without filename
+        if file.filename == '':
+            message='No selected file'
+            return redirect(request.url)
+        if file and allowed_file(file.filename):
+            filename = secure_filename(file.filename)
+            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            message='file Uploaded Successfully!'
+            filename=str(os.path.splitext(filename)[0])
+            return redirect(url_for('song_labels',filename=filename))
+    return render_template('upload.html',message=message)
+
+@app.route('/song_labels/<filename>')
+def song_labels(filename):
+    print(filename)
+    x=functions.cnn_model(filename)
+    x['rank']=x.index+1
+    return render_template('song_labels',filename=filename,tables=x)
+
+
 if __name__ == '__main__':
-    app.run(debug=False)
+
+    app.run(debug=True)

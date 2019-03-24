@@ -5,6 +5,9 @@ import time
 from sklearn.externals import joblib
 import Recommenders as Recommenders
 import Evaluation as Evaluation
+import subprocess,os
+import extract_and_store_spectrograms
+import label_image
 
 base_dir='F:/New Folder/'
 song_df = pandas.read_csv(base_dir + 'song_df.csv')
@@ -49,5 +52,16 @@ def similar_songs(song):
     return x
 
 
-#for i in tt['song']:
-  #  print (i)
+def cnn_model(filename):
+    base_path='C:/Users/HP/Desktop/Music-Recommendation/uploads'
+    #path=base_path+file
+    os.chdir(base_path)
+    os.system('2_mp3_to_wav.sh')
+    extract_and_store_spectrograms.wav_to_image()
+    jpeg_path=base_path+'/'+filename+'.jpeg'
+    os.chdir('C:/Users/HP/Desktop/Music-Recommendation/')
+    x=label_image.cnn_pred(jpeg_path)
+    return x
+
+
+
