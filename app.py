@@ -80,7 +80,7 @@ def song_labels(filename):
     print(filename)
     x=functions.cnn_model(filename)
     x['rank']=x.index+1
-    return render_template('song_labels',filename=filename,tables=x)
+    return render_template('song_labels.html',filename=filename,tables=x,show_table=1)
 
 
 if __name__ == '__main__':
