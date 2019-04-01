@@ -2,6 +2,7 @@ from flask import Flask,redirect, url_for, request,render_template,flash,send_fr
 import pandas as pd
 from werkzeug.utils import secure_filename
 import functions,os
+import random
 current_path=os.getcwd()
 UPLOAD_FOLDER = current_path+'/uploads'
 app = Flask(__name__)
@@ -25,7 +26,10 @@ def index():
 @app.route('/pop_rec/<user_id>')
 def pop_rmd(user_id):
     x=functions.popularity_based()
-    return render_template('pop_rmd.html',  tables=x,show_table=1,user_id=user_id)
+    saf = functions.song_artist_df_generator(x)
+    spotif_res=functions.create_playlist(saf,playlist_name='test'+str(random.randint(1,101)))
+
+    return render_template('pop_rmd.html',  tables=x,show_table=1,user_id=user_id,spotif_res=spotif_res)
 
 @app.route('/user_rec_ip',methods=['GET','POST'])
 def user_rec_ip():
@@ -37,7 +41,9 @@ def user_rec_ip():
 @app.route('/user_rec/<user_id>')
 def user_rec(user_id):
     x=functions.item_similarity(user_id)
-    return render_template('user_rec.html', tables=x, show_table=1,user_id=user_id)
+    saf = functions.song_artist_df_generator(x)
+    spotif_res = functions.create_playlist(saf, playlist_name='test' + str(random.randint(1, 101)))
+    return render_template('user_rec.html', tables=x, show_table=1,user_id=user_id,spotif_res=spotif_res)
 
 @app.route('/song_rec_ip',methods=['GET','POST'])
 def song_rec_ip():
@@ -51,7 +57,9 @@ def song_rec(song):
     print(song)
     print(type(song))
     x=functions.similar_songs(song)
-    return render_template('song_rec.html', tables=x, show_table=1,song=song)
+    saf = functions.song_artist_df_generator(x)
+    spotif_res = functions.create_playlist(saf, playlist_name='test' + str(random.randint(1, 101)))
+    return render_template('song_rec.html', tables=x, show_table=1,song=song,spotif_res=spotif_res)
 
 @app.route('/upload', methods=['GET', 'POST'])
 def upload_file():
