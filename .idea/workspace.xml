@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/app.py" line="17" mnemonic="3" />
+    <bookmark url="file://$PROJECT_DIR$/app.py" line="18" mnemonic="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f382e6bb-cf77-44b4-9819-45684d3d7176" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spotif.py" afterDir="false" />
+    <list default="true" id="f382e6bb-cf77-44b4-9819-45684d3d7176" name="Default Changelist" comment="spotify playlist integrated in UI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +16,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/untitled$recommend.coverage" NAME="recommend Coverage Results" MODIFIED="1551714184475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Music_Recommendation$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1553450906768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Music_Recommendation$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1554190596862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Music_Recommendation$untitled.coverage" NAME="untitled Coverage Results" MODIFIED="1553004263580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/untitled$temp.coverage" NAME="temp Coverage Results" MODIFIED="1551702562328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled$untitled.coverage" NAME="untitled Coverage Results" MODIFIED="1552900372011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -83,43 +83,44 @@
     <session id="-187223456">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.12" value="3" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.72" value="1" />
+          <entry key="project.open.time.69" value="1" />
+          <entry key="project.open.time.72" value="2" />
           <entry key="project.open.time.76" value="1" />
           <entry key="project.open.time.77" value="1" />
-          <entry key="project.open.time.82" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.open.time.82" value="2" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="854" />
-          <entry key="html" value="677" />
-          <entry key="py" value="3549" />
-          <entry key="txt" value="168" />
+          <entry key="html" value="724" />
+          <entry key="py" value="3670" />
+          <entry key="txt" value="209" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="677" />
-          <entry key="PLAIN_TEXT" value="168" />
-          <entry key="Python" value="3324" />
+          <entry key="HTML" value="724" />
+          <entry key="PLAIN_TEXT" value="209" />
+          <entry key="Python" value="3445" />
           <entry key="Scratch" value="1079" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="40" />
+          <entry key="html" value="47" />
           <entry key="js" value="1" />
-          <entry key="py" value="20" />
+          <entry key="py" value="27" />
           <entry key="rnc" value="1" />
           <entry key="sh" value="3" />
           <entry key="txt" value="2" />
@@ -128,12 +129,18 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Bash" value="3" />
-          <entry key="HTML" value="40" />
+          <entry key="HTML" value="47" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="18" />
+          <entry key="Python" value="25" />
           <entry key="RNG Compact" value="1" />
           <entry key="Scratch" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.checkout.local" value="2" />
+          <entry key="git.branch.create.new" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -144,40 +151,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.py">
+        <entry file="file://$PROJECT_DIR$/functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="14" selection-start-line="14" selection-end-line="15" />
+            <state relative-caret-position="1887">
+              <caret line="111" column="27" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="27" />
               <folding>
-                <element signature="e#0#92#0" expanded="true" />
-                <marker date="1553449642143" expanded="true" signature="534:536" ph="..." />
-                <marker date="1553449642143" expanded="true" signature="1334:3129" ph="..." />
+                <element signature="e#0#13#0" expanded="true" />
+                <marker date="1554143421244" expanded="true" signature="2937:2939" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/functions.py">
+        <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="272">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#0#92#0" expanded="true" />
+                <marker date="1554365020785" expanded="true" signature="571:573" ph="..." />
+                <marker date="1554365020785" expanded="true" signature="1536:3671" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spotif.py">
+        <entry file="file://$PROJECT_DIR$/templates/song_rec.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <marker date="1554142847088" expanded="true" signature="1320:1322" ph="..." />
-              </folding>
+            <state relative-caret-position="1241">
+              <caret line="73" column="55" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/pop_rmd.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1241">
+              <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -185,7 +198,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pre_process_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="340">
               <caret line="26" column="31" selection-start-line="26" selection-end-line="27" />
             </state>
           </provider>
@@ -209,6 +222,24 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="User_view_branch" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -223,20 +254,20 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/all_Data.py" />
         <option value="$PROJECT_DIR$/3_extract_and_store_spectrograms.py" />
         <option value="$PROJECT_DIR$/label_image.py" />
-        <option value="$PROJECT_DIR$/functions.py" />
         <option value="$PROJECT_DIR$/templates/upload1.html" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/templates/pop_rmd.html" />
-        <option value="$PROJECT_DIR$/templates/song_rec.html" />
         <option value="$PROJECT_DIR$/templates/song_rec_ip.html" />
         <option value="$PROJECT_DIR$/templates/upload.html" />
         <option value="$PROJECT_DIR$/templates/song_labels.html" />
-        <option value="$PROJECT_DIR$/templates/user_rec.html" />
         <option value="$PROJECT_DIR$/templates/user_rec_ip.html" />
         <option value="$PROJECT_DIR$/extract_and_store_spectrograms.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_4.py" />
         <option value="$PROJECT_DIR$/spotif.py" />
+        <option value="$PROJECT_DIR$/functions.py" />
+        <option value="$PROJECT_DIR$/templates/pop_rmd.html" />
+        <option value="$PROJECT_DIR$/templates/user_rec.html" />
+        <option value="$PROJECT_DIR$/templates/song_rec.html" />
+        <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
   </component>
@@ -429,6 +460,8 @@
         <item itemvalue="Flask server.Flask (app.py)" />
         <item itemvalue="Python.recommend" />
         <item itemvalue="Python.temp" />
+        <item itemvalue="Flask server.Flask (app.py)" />
+        <item itemvalue="Python.recommend" />
       </list>
     </recent_temporary>
   </component>
@@ -499,7 +532,21 @@
       <option name="project" value="LOCAL" />
       <updated>1553452014582</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="spotify playlist working">
+      <created>1554143240741</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1554143240741</updated>
+    </task>
+    <task id="LOCAL-00010" summary="spotify playlist integrated in UI">
+      <created>1554144442097</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1554144442097</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -515,7 +562,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49512196" visible="true" weight="0.33736762" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49512196" visible="true" weight="0.35854766" />
       <window_info id="Structure" order="1" sideWeight="0.50487804" side_tool="true" weight="0.2647504" />
       <window_info id="Favorites" order="2" sideWeight="0.502439" side_tool="true" weight="0.26096824" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -526,11 +573,11 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.34369886" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.34369886" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -578,7 +625,9 @@
     <MESSAGE value="cnn_model working.UI not done yet" />
     <MESSAGE value="UI done ." />
     <MESSAGE value="wav to image optimized" />
-    <option name="LAST_COMMIT_MESSAGE" value="wav to image optimized" />
+    <MESSAGE value="spotify playlist working" />
+    <MESSAGE value="spotify playlist integrated in UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="spotify playlist integrated in UI" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/spark.py">
@@ -704,13 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user_rec.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/song_labels.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
@@ -722,13 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/pop_rmd.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -753,39 +788,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/song_rec.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/extract_and_store_spectrograms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-          <folding>
-            <element signature="e#2#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" selection-start-line="14" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#92#0" expanded="true" />
-            <marker date="1553449642143" expanded="true" signature="534:536" ph="..." />
-            <marker date="1553449642143" expanded="true" signature="1334:3129" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pre_process_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="26" column="31" selection-start-line="26" selection-end-line="27" />
         </state>
       </provider>
     </entry>
@@ -793,29 +799,63 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-end-line="50" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spotif.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <marker date="1554142847088" expanded="true" signature="1320:1322" ph="..." />
-          </folding>
+        <state relative-caret-position="257">
+          <caret line="56" column="42" lean-forward="true" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user_rec.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="73" column="55" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="1887">
+          <caret line="111" column="27" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="27" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+            <marker date="1554143421244" expanded="true" signature="2937:2939" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/song_rec.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" column="55" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pop_rmd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pre_process_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="31" selection-start-line="26" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#92#0" expanded="true" />
+            <marker date="1554365020785" expanded="true" signature="571:573" ph="..." />
+            <marker date="1554365020785" expanded="true" signature="1536:3671" ph="..." />
           </folding>
         </state>
       </provider>
